@@ -1,0 +1,197 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+/* genenral styles to all the component */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", "playfair" "roboto-flex", sans-serif;
+}
+:root{
+    /* color */
+    --white-color:hsl(0, 0%, 100%);
+    --dark-color:hsl(0, 0%, 0%);
+    --light-dark-color:hsla(0, 0%, 0%, 0.8);
+    --primary-color: hsl(270, 50%, 40%);
+    --secondary-color: hsl(54, 61%, 57%);
+    --background-color:hsla(353, 58%, 92%, 0.255);
+
+    /* font-size */
+    --font-size-s:0.9rem;
+    --font-size-n:1rem;
+    --font-size-m:1.12rem;
+    --font-size-l:1.5rem;
+    --font-size-xl:2rem;
+    --font-size-xxl:2.5rem;
+
+    /* font-weight */
+    --font-weigth-normal:400;
+    --font-weigth-medium:500;
+    --font-weigth-semibold:600;
+    --font-weigth-bold:700;
+
+    /* border-radius */
+     --border-radius-xs:2px;
+    --border-radius-s:8px;
+    --border-radius-m:30px;
+    --border-radius-c:50%;
+
+}
+.mains{
+    overflow: hidden;
+}
+
+
+a{
+    color: var(--white-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease;
+    
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#section-content{
+    padding: 0 6rem;
+    background: var(--background-color);
+}
+
+/* header section styles*/
+
+header .header_tittle{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    padding: 1rem 6rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.logo::first-letter{
+    font-size:var(--font-size-xxl);
+    color:var(--secondary-color);
+    font-weight:var(--font-weigth-bold);
+    font-family: "inter", sans-serif;
+}
+
+.design{
+      color: var(--secondary-color);
+      text-shadow: linear-gradient(45deg var(--secondary-color),rgb(99, 90, 7));
+      font-family: "inter", sans-serif;
+}
+.list li{
+    list-style: none;
+    padding:var(--font-size-n);
+    text-transform: uppercase;
+    font-family: "inter", sans-serif;
+    font-weight: var(--font-weigth-bold);
+
+}
+
+header .list{
+    display: flex;
+}
+.list a:hover{
+    background-color: transparent;
+    border: var(--border-radius-xs) solid var(--white-color);
+    padding: .5rem;
+    border-radius: var(--border-radius-m);
+}
+
+.header_tittle .list  .order a{
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+     padding: .5rem;
+    border-radius: var(--border-radius-m);
+}
+.header_tittle .list  .order a:hover{
+    border: var(--border-radius-xs) solid var(--light-dark-color);
+    color:  var(--dark-color); 
+    font-size: var(--font-size-m);
+}
+
+/* hero section style */
+
+.hero-section{
+    position: relative;
+    margin-top: 9rem;
+    padding: 1rem 6rem;
+    margin: 6rem auto;
+   
+}
+.hero-containers{
+    margin-bottom: var(--font-size-l);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-details{
+    margin-bottom: var(--font-size-m);
+    max-width: 50%;
+}
+.tittles{
+    text-align: center;
+    margin-bottom: var(--font-size-l);
+}
+.logo-name{
+    font-size:var(--font-size-l);
+    color:var(--secondary-color);
+    font-weight:var(--font-weigth-bold);
+    font-family: "inter", sans-serif;
+    letter-spacing: var(--font-size-s);
+}
+.hero-discover{
+    font-size: var(--font-size-xxl);
+}
+.texts{
+    text-align: center;
+    line-height: 1.8;
+    font-size: var(--font-size-l);
+    font-family: "inter", sans-serif;
+}
+
+.hero-containers .order{
+    text-transform: uppercase;
+    padding: .9rem ;
+    margin: 1.5rem 12rem;
+    font-size: var(--font-size-m);
+    font-family: "inter", sans-serif;
+    border-radius: var(--border-radius-s);
+    font-weight: var(--font-weigth-bold);
+    color: var(--white-color);
+    background: linear-gradient(180deg, var(--primary-color), var(--light-dark-color), var(--primary-color));
+}
+.hero-containers .order:hover{
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.hero-image{
+    width: 400px;
+    height: 500px;
+}
+.hero-image img{
+    border-radius: var(--border-radius-c);
+    object-fit: cover;
+  
+}
+/* collection section styles */
+   
+
+
+
+
+
+
+
+
+
+
