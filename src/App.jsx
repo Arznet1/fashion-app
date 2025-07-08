@@ -1,6 +1,7 @@
 import Header from "./header"
 import Hero from "./hero"
 import Collection from "./collection"
+import About from "./about"
 
 
 const App = () => {
@@ -10,6 +11,7 @@ return(
     <Header/>
     <Hero/>
     <Collection/>
+    <About/>
  </main>
 );
 }

@@ -10,8 +10,8 @@ import gallarypic9 from './assets/images/style9.jpg'
 
 const Collection = () => {
   return (
-    <section className="section-content" id='#collection'>
-          <h2 className='section-tittle'>collection</h2>
+    <section className="section-content" id='collection'>
+          <h2 className='section-tittle' >collection</h2>
         <div className="collection">
     
             <div className="collection-image">
