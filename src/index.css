@@ -126,20 +126,24 @@ header .list{
 }
 .list a:hover{
     background-color: transparent;
-    border: var(--border-radius-xs) solid var(--white-color);
+   transition: all .2s ease;
     padding: .5rem;
-    border-radius: var(--border-radius-m);
+   
 }
 
 .header_tittle .list  .order a{
     background-color: var(--secondary-color);
-    color: var(--dark-color);
+    color: var(--primary-color);
      padding: .5rem;
-    border-radius: var(--border-radius-m);
+    border-radius: var(--border-radius-c);
 }
 .header_tittle .list  .order a:hover{
     border: var(--border-radius-xs) solid var(--light-dark-color);
-    color:  var(--dark-color); 
+    color:  var(--secondary-color);
+     background-color: transparent;
+     padding: .5rem;
+     transition: all .2s ease;
+     border-radius: var(--border-radius-m);
     font-size: var(--font-size-m);
 }
 
